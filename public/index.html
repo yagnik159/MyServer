@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
     <title>Button Click Example</title>
   </head>
   <body>
-    <button>Run Script</button>
+    <table id="request-raw">
+      <tr>
+        <th>Request</th>
+        <th>RequestData</th>
+        <th>Button</th>
+        <th>status</th>
+      </tr>
+    </table>
+    <button id="click-me">Run Script</button>
     <script src="script.js"></script>
   </body>
 </html>
